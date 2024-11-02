@@ -8,6 +8,9 @@ function getCountryInfo(name, information) {
           const info = getNestedValue(data[0], element);
           thing = JSON.stringify(info, null, 0);
           console.log(element + ": " + thing);
+          if (thing == undefined) {
+            thing == "Not found";
+          }
           if (element == "flags.svg") {
             document.getElementById("flag").src = thing.slice(1, -1);
           }
