@@ -1,0 +1,100 @@
+body {
+  background-color: #2e2e2e;
+}
+
+.text {
+  color: #f4c2c2;
+  font-weight: normal;
+  font-family: "Russo One", sans-serif;
+}
+
+#header {
+  font-size: 7vh;
+}
+
+#top-section {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.body-text {
+  color: #f2f2f2;
+  font-size: 1.5vw;
+  line-height: 1.5;
+  max-width: 300px;
+}
+
+#flag {
+  width: 40%; /* Reduce width to give the text more space */
+  height: auto;
+}
+
+/* Country info container styling */
+#country-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; /* Distribute space between flag and info */
+  margin-top: 3vh;
+  gap: 5vw; /* Adjust gap for better spacing */
+  padding: 2vw;
+}
+/* General styling for input and button */
+#country,
+#submit-button {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* Input field styling */
+#country {
+  background-color: #e0e0e0;
+  color: #333333;
+  width: 20vw;
+  text-align: left;
+}
+
+#country::placeholder {
+  color: #888;
+}
+
+/* Submit button styling */
+#submit-button {
+  background-color: #ff4081; /* Matching pink shade */
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Hover effects */
+#country:hover,
+#submit-button:hover {
+  background-color: #444;
+  color: #f2f2f2;
+}
+
+#submit-button:hover {
+  background-color: #ff6091;
+}
+
+/* Active or Focus effect */
+#country:focus {
+  border: 2px solid #ff4081;
+}
+
+#submit-button:active {
+  background-color: #ff2051;
+}
+
+/* Additional Styling for Smooth Button Appearance */
+#submit-button {
+  box-shadow: 0px 4px 10px rgba(255, 64, 129, 0.3);
+}

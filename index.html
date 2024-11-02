@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">Enter a country!</title>
+  </head>
+  <script src="worlds.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <body>
+    <div id="top-section">
+        <h1 class="text" id="header">Enter A Country!</h1>
+        <form method="post">
+        <input type="text" name="country" id="country" value="sweden" />
+        <button type="submit" onclick="getCountry()" id="submit-button">Submit</button>
+        </form>
+    </div>
+    <div id="country-info">
+        <img src="" alt="" id="flag">
+        <div>
+            <p id="name" class="text body-text"></p>
+            <p id="capital" class="text body-text"></p>
+            <p id="population" class="text body-text"></p>
+            <p id="area" class="text body-text"></p>
+        </div>
+        </img>
+    </div>
+  </body>
+</html>
