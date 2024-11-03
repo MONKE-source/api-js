@@ -12,6 +12,10 @@ body {
   font-size: 7vh;
 }
 
+.bottom {
+  margin-top: 5vh;
+}
+
 #top-section {
   padding: 20px;
   text-align: center;
