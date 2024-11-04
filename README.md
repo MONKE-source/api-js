@@ -2,5 +2,5 @@
 
 - kanye.js generates a random kanye quote
 - worlds.js generates random info about a certain country
-- age.js generates some information that is guessed based on a name
+- name.js generates some information that is guessed based on a name
 - index.html, style.css shows the styles and gives some UI to it
