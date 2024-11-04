@@ -1,5 +1,6 @@
 function nameProps() {
-  const name = "john";
+  event.preventDefault(); // prevent from reloading
+  const name = document.getElementById("country").value;
   // Api URLS
   const ageURL = "https://api.agify.io?name=" + name;
   const nationalityURL = "https://api.nationalize.io/?name=" + name;
@@ -10,6 +11,7 @@ function nameProps() {
     .then((data) => {
       const age = data.age;
       console.log(age);
+      document.getElementById("capital").innerHTML = "Age: " + age;
     })
     .catch((error) => console.error(error));
   //obtaining the nationality
@@ -22,6 +24,8 @@ function nameProps() {
         .then((data) => {
           const countryName = data[0].name.common;
           console.log(countryName);
+          document.getElementById("population").innerHTML =
+            "Nationality: " + countryName;
         });
     })
     .catch((error) => console.error(error));
@@ -31,6 +35,7 @@ function nameProps() {
     .then((data) => {
       const gender = data.gender;
       console.log(gender);
+      document.getElementById("name").innerHTML = "Gender: " + gender;
     })
     .catch((error) => console.error(error));
 }
