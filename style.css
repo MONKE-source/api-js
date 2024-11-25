@@ -70,7 +70,8 @@ body {
 }
 /* General styling for input and button */
 #country,
-.submit-button {
+.submit-button,
+.random-button {
   font-size: 1rem;
   padding: 10px;
   border-radius: 5px;
@@ -92,21 +93,25 @@ body {
 }
 
 /* Submit button styling */
-.submit-button {
+.submit-button,
+.random-button {
   background-color: #ff4081; /* Matching pink shade */
   color: #ffffff;
   cursor: pointer;
   margin-left: 10px;
+  border: none;
 }
 
 /* Hover effects */
 #country:hover,
-.submit-button:hover {
+.submit-button:hover,
+.random-button:hover {
   background-color: #444;
   color: #f2f2f2;
 }
 
-.submit-button:hover {
+.submit-button:hove,
+.random-button:hover {
   background-color: #ff6091;
 }
 
@@ -115,12 +120,14 @@ body {
   border: 2px solid #ff4081;
 }
 
-.submit-button:active {
+.submit-button:active,
+.random-button:active {
   background-color: #ff2051;
 }
 
 /* Additional Styling for Smooth Button Appearance */
-.submit-button {
+.submit-button,
+.random-button {
   box-shadow: 0px 4px 10px rgba(255, 64, 129, 0.3);
 }
 
@@ -128,4 +135,36 @@ body {
   position: absolute;
   right: 95vw;
   top: 5vw;
+}
+
+.even-more-bottom {
+  margin-top: 10vh;
+}
+
+select {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: none;
+  background-color: #f3a8e0;
+}
+
+#result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  color: white;
+}
+
+#result-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+}
+
+#result-container h2,
+#result-container h3 {
+  margin: 10px 0;
 }

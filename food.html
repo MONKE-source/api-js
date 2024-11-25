@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">Food!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="food.js" defer></script>
+  </head>
+  <body>
+    <div id="top-section">
+      <h1 class="text" id="header">Food stuff!</h1>
+      <form method="post">
+        <input type="text" name="country" id="country" value="Arrabiata" />
+        <select id="dropdown">
+          <option value="name">Name</option>
+          <option value="area">Area</option>
+          <option value="main-ingrediant">Main Ingrediant</option>
+        </select>
+        <button class="submit-button">Search</button>
+        <button class="random-button">Random!</button>
+      </form>
+      <a href="index.html">
+        <button class="submit-button other-page">Home</button>
+      </a>
+    </div>
+    <div id="result-container"></div>
+  </body>
+</html>
